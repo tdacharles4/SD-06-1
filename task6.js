@@ -1,8 +1,16 @@
+function itemList(item, qty){
+    this.item = item,
+    this.qty = qty
+}
 
+const listLimit = process.argv[2]
+const listArray = []
 
-// Type your code below this line!
+for (i=0;i<listLimit*2;i+=2) {
+    itemName = process.argv[i+3],
+    itemQty = process.argv[i+4],
+    itemly = new itemList(itemName, itemQty)
+    listArray.push(itemly)
+}
 
-
-
-// Type your code above this line!
-
+console.log(listArray)

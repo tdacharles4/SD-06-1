@@ -1,8 +1,14 @@
+// Constructor
+function friendsList(newFriend){
+    this.newFriend = newFriend
+}
 
+const friendLimit = process.argv[2]
+const friendArray = []
 
-// Type your code below this line!
+for (i=0;i<friendLimit;i++) {
+    Friendly = new friendsList(process.argv[i+3]),
+    friendArray.push(Friendly.newFriend)
+}
 
-
-
-// Type your code above this line!
-
+console.log(friendArray)
